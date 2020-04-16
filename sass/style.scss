@@ -1,8 +1,13 @@
 @import "libs/reset.scss";
 
+html { 
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 header, footer {
@@ -13,19 +18,25 @@ header {
     h1 {
         color: #FDCB46;
         font-size: 3.5em;
+        font-weight: bold;
 
     }
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 200px;
-    min-width: 100%;
+    height: 200px;
+    width: 100%;
     text-align: center;
 }
 
 main {
+    h1 {
+        font-size: 2em;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+    }
     background: #ffffff;
-    min-width: 100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -34,29 +45,115 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
-    min-width: 100%;
+    height: 100px;
+    width: 100%;
     position: fixed;
     bottom: 0;
+    a {
+        color: #FDCB46;
+    }
 }
 
 .cartes {
-    border: 1px solid black;
-    padding: 25px 0px 25px 0px;
-    margin: 25px 0px 25px 0px;
+    /* border: 1px solid black; */
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     min-width: 100%;
     min-height: 100%;
 }
 
-.carte {
+%carte {
     border: 1px solid silver;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    min-height: 650px;
-    min-width: 450px;
+    min-height: 600px;
+    min-width: 400px;
+}
+
+.carte-note-enchantee {
+    @extend %carte;
+    font-family: 'Devonshire', cursive;
+    background: #FCDFDB;
+    color: #633D41;
+    h2 {
+        font-size: 2.50em;
+    }
+    p {
+        font-size: 2.50em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.carte-chic-francais {
+    @extend %carte;
+    font-family: 'Croissant One', cursive;
+    background: #FFF5FE;
+    h2 {
+        font-size: 1.75em;
+        background: linear-gradient(135deg, #d8852e 0%,#905bfd 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        font-size: 2.50em;
+        font-family: 'Montserrat', sans-serif;
+        color: #905bfd;
+    }
+}
+
+.carte-delice-papilles {
+    @extend %carte;
+    font-family: 'Dancing Script', cursive;
+    background: #F9F9F9;
+    h2 {
+        font-size: 2.50em;
+        background: linear-gradient(135deg, #0431df 0%,#178FFA 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        font-size: 2.50em;
+        font-family: 'Montserrat', sans-serif;
+        color: #178FFA;
+    }
+}
+
+.carte-palette-gout {
+    @extend %carte;
+    font-family: 'Kaushan Script', cursive;
+    background: #FDFFFD;
+    h2 {
+        font-size: 2.25em;
+        background: linear-gradient(135deg, #3D9339 0%,#BFFF7E 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        font-size: 2.50em;
+        font-family: 'Montserrat', sans-serif;
+        color: #BFFF7E;
+    }
+}
+
+.last-line {
+    color: blue;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+a {
+    text-decoration: none;
 }

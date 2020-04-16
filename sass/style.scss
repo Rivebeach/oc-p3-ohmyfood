@@ -35,12 +35,13 @@ main {
         padding: 10px 10px 10px 10px;
         margin: 10px 10px 10px 10px;
     }
-    background: #ffffff;
+    background: #FFFFFF;
     width: 100%;
     text-align: center;
 }
 
 footer {
+    padding: 0px 30px 0px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,19 +52,20 @@ footer {
     bottom: 0;
     a {
         color: #FDCB46;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 }
 
 .cartes {
-    /* border: 1px solid black; */
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    border: 1px dashed black;
+    padding: 25px 0px 25px 0px;
+    margin: 25px 0px 25px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
 %carte {
@@ -74,8 +76,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
-    min-width: 400px;
+    height: 600px;
+    width: 400px;
 }
 
 .carte-note-enchantee {
@@ -143,11 +145,37 @@ footer {
     }
 }
 
+.call {
+    border: 1px dashed black;
+    padding: 25px 0px 25px 0px;
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.bouton {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 270px;
+    background-color: #579C87;
+    color: #FDCB46;
+    font-size: 1.5em;
+    font-weight: bold;
+    place-content: center;
+    border-radius: 20px;
+}
+
 .last-line {
     color: blue;
 }
 
-.logo {
+.logo-note {
     height: 75px;
     width: 75px;
     padding: 10px 10px 10px 10px;

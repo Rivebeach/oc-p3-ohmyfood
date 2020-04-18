@@ -52,8 +52,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   padding: 0px 0px 140px 0px;
 }
 

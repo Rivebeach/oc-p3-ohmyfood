@@ -7,7 +7,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 140px 0px;
 
 }
 
@@ -21,34 +21,33 @@ header {
         font-size: 3.5em;
         font-weight: bold;
     }
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 250px;
     width: 100%;
     text-align: center;
 }
 
 main {
-    h1 {
-        font-size: 2em;
-        padding: 10px 0px 10px 0px;
-        margin: 10px 0px 10px 0px;
-    }
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     background: #FFFFFF;
     width: 100%;
     text-align: center;
 }
 
 footer {
-    padding: 0px 30px 0px 30px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 140px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -61,25 +60,25 @@ footer {
 
 .cartes {
     border: 1px dashed black;
-    padding: 25px 0px 25px 0px;
-    margin: 25px 0px 25px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
 
 %carte {
     border: 1px solid silver;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 50px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
-    width: 375px;
+    height: 760px;
+    width: 540px;
 }
 
 .carte-note-enchantee {
@@ -92,7 +91,7 @@ footer {
     }
     p {
         font-size: 2.50em;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Devonshire', sans-serif;
     }
 }
 
@@ -149,8 +148,8 @@ footer {
 
 .call {
     border: 1px dashed black;
-    padding: 25px 0px 25px 0px;
-    margin: 25px 0px 25px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,12 +158,12 @@ footer {
 }
 
 .bouton {
-    padding: 10px 0px 10px 0px;
-    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 50px 0px 50px 0px;
     display: flex;
     flex-direction: column;
-    height: 80px;
-    width: 270px;
+    height: 120px;
+    width: 660px;
     background-color: #579C87;
     color: #FDCB46;
     font-size: 1.5em;
@@ -176,8 +175,8 @@ footer {
 .logo-note {
     height: 75px;
     width: 75px;
-    padding: 10px 0px 10px 0px;
-    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 a {

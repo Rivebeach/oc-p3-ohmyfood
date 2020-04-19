@@ -81,9 +81,10 @@ main {
         font-size: 2.5em;
     }
     p {
-        font-size: 2.5em;
+        font-size: 1.75em;
         text-transform: uppercase;
-        font-family: 'Tillana', cursive;;
+        font-family: 'Tillana', cursive;
+        font-weight: bold;
     }
 }
 
@@ -91,7 +92,7 @@ main {
     height: 75px;
     width: 75px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 15px 0px 15px;
 }
 
 .carte-chic-francais {
@@ -107,7 +108,8 @@ main {
     p {
         padding: 0px 0px 0px 0px;
         margin: 25px 0px 0px 0px;
-        font-size: 2.5em;
+        font-size: 2em;
+        font-weight: bold;
         font-family: 'Libre Baskerville', serif;
         color: #d8852e;
     }
@@ -193,45 +195,90 @@ footer {
     }
 }
 
+
+/* Début de la mise en page du menu la note enchantée */
+
 .menu {
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px 1px #e2e2e2;
+    background: #FCDFDB;
+    color: #633D41;
+    height: 1670px;
+    width: 1180px;
 }
 
 .menu-entete {
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Devonshire', cursive;
 }
 
 .menu-box{
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 0px 50px 0px;
+    font-family: 'Tillana', cursive;
 }
 
 .menu-box-titre {
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 0px 35px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }    
 }
 
 .menu-separateur {
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    width: 400px;
-    color: #633D41;
+    /* margin: 10px 10px 10px 10px; */
+    width: 325px;
+    fill: #633D41;
 }
 
 .menu-box-courses {
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
+    font-size: 1em;
+}
+
+.menu-box-courses-ligne {
+    /* border: 1px dashed grey; */
+    padding: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+
+.prix {
+    font-weight: bold;
 }
 
 .menu-footer {
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    /* margin: 10px 10px 10px 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Devonshire', cursive;
+    font-size: 3em;
 }
+
+/* Début de la mise en page du menu la note enchantée */

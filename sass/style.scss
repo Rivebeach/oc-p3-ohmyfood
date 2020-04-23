@@ -1,22 +1,40 @@
+/* import du reset css : "minireset.css v0.0.6" */
+
 @import "libs/reset.scss";
+
+/* Attention "Devonshire", "Croissant One" et "Kaushan Script" n'ont qu'une seule weight-size et ne prennent pas en charge le bold */
+
+/* personnalisation à destination du fichier style.css */
+
+/* personnalisation globale su site */ 
 
 html { 
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 body {
     padding: 0px 0px 140px 0px;
 }
 
-a {
-    text-decoration: none;
+h1 {
+    color: #FDCB46;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
-.titre-pages-annexes {
+h2 {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 50px 0px;
-    font-size: 2.5em;
-    font-weight: bold;
+    margin: 25px 25px 25px 25px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
 }
 
 header, footer {
@@ -24,11 +42,6 @@ header, footer {
 }
 
 header {
-    h1 {
-        color: #FDCB46;
-        font-size: 4em;
-        font-weight: bold;
-    }
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 50px 0px;
     display: flex;
@@ -45,7 +58,6 @@ main {
     margin: 0px 0px 50px 0px;
     background: #FFFFFF;
     width: 100%;
-    text-align: center;
 }
 
 .cartes {
@@ -78,13 +90,17 @@ main {
     background: #FCDFDB;
     color: #633D41;
     h2 {
-        font-size: 2.5em;
+        padding: 0px 0px 0px 0px;
+        margin: 25px 0px 0px 0px;
+        font-size: 1rem;
     }
     p {
-        font-size: 1.75em;
+        padding: 0px 0px 0px 0px;
+        margin: 25px 0px 0px 0px;
+        font-size: 1rem;
         text-transform: uppercase;
         font-family: 'Tillana', cursive;
-        font-weight: bold;
+        font-weight: normal;
     }
 }
 
@@ -92,7 +108,7 @@ main {
     height: 75px;
     width: 75px;
     padding: 0px 0px 0px 0px;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 0px 0px 0px;
 }
 
 .carte-chic-francais {
@@ -100,7 +116,7 @@ main {
     font-family: 'Croissant One', cursive;
     background: #FFF5FE;
     h2 {
-        font-size: 1.75em;
+        font-size: 1rem;
         background: linear-gradient(135deg, #d8852e 0%,#905bfd 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -108,8 +124,8 @@ main {
     p {
         padding: 0px 0px 0px 0px;
         margin: 25px 0px 0px 0px;
-        font-size: 2em;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: normal;
         font-family: 'Libre Baskerville', serif;
         color: #d8852e;
     }
@@ -120,15 +136,15 @@ main {
     font-family: 'Dancing Script', cursive;
     background: #F9F9F9;
     h2 {
-        font-size: 2.5em;
+        font-size: 1rem;
         background: linear-gradient(135deg, #0431df 0%,#178FFA 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     p {
         padding: 0px 0px 0px 0px;
-        margin: 15px 0px 0px 0px;
-        font-size: 2.5em;
+        margin: 25px 0px 0px 0px;
+        font-size: 1rem;
         font-family: 'Tillana', cursive;;
         color: #0431df;
     }
@@ -139,13 +155,15 @@ main {
     font-family: 'Kaushan Script', cursive;
     background: #FDFFFD;
     h2 {
-        font-size: 2.25em;
+        font-size: 1rem;
         background: linear-gradient(135deg, #3D9339 0%,#BFFF7E 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     p {
-        font-size: 2.5em;
+        padding: 0px 0px 0px 0px;
+        margin: 25px 0px 0px 0px;
+        font-size: 1rem;
         font-family: 'Tillana', cursive;
         color: #3D9339;
     }
@@ -171,8 +189,8 @@ main {
     width: 660px;
     background-color: #579C87;
     color: #FDCB46;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: normal;
     place-content: center;
     border-radius: 20px;
 }
@@ -190,13 +208,21 @@ footer {
     bottom: 0;
     a {
         color: #FDCB46;
-        font-size: 1.5em;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: normal;
     }
 }
 
+.titre-pages-annexes {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
 
 /* Début de la mise en page du menu la note enchantée */
+/* Attention à peut-être replacer les titres dans leur éléments de page ? */
 
 .menu {
     /* border: 1px dashed black; */
@@ -217,7 +243,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 3em;
+    font-size: 1rem;
     font-family: 'Devonshire', cursive;
 }
 
@@ -236,10 +262,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-        h3 {
-            font-size: 1.5em;
-            font-weight: bold;
-        }    
 }
 
 .menu-separateur {
@@ -253,7 +275,7 @@ footer {
     /* border: 1px dashed grey; */
     padding: 10px 10px 10px 10px;
     /* margin: 10px 10px 10px 10px; */
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .menu-box-courses-ligne {
@@ -262,11 +284,11 @@ footer {
     /* margin: 10px 10px 10px 10px; */
     display: flex;
     justify-content: space-between;
-    font-size: 1.25em;
+    font-size: 1rem;
 }
 
 .prix {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .menu-footer {
@@ -278,7 +300,30 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: 'Devonshire', cursive;
-    font-size: 3em;
+    font-size: 1rem;
 }
 
-/* Début de la mise en page du menu la note enchantée */
+/* Début de la mise en page du menu le chic à la française */
+
+/* Début de la mise en page des mentions légales*/
+/* Attention : mise en page et code associé provisoires */
+
+.mentions-legales {
+    text-align: justify;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
+    width: 1670px;
+        p {
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 20px 0px;
+        }
+        strong {
+            font-weight: bold;
+            color: #579C87;
+        }
+        a {
+            color: #579C87;
+            font-weight: normal;
+        }
+
+}

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* import du reset css : "minireset.css v0.0.6" */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -48,23 +49,36 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
+/* Attention "Devonshire", "Croissant One" et "Kaushan Script" n'ont qu'une seule weight-size et ne prennent pas en charge le bold */
+/* personnalisation à destination du fichier style.css */
+/* personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 body {
   padding: 0px 0px 140px 0px;
 }
 
-a {
-  text-decoration: none;
+h1 {
+  color: #FDCB46;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
-.titre-pages-annexes {
+h2 {
   padding: 0px 0px 0px 0px;
-  margin: 0px 0px 50px 0px;
-  font-size: 2.5em;
-  font-weight: bold;
+  margin: 25px 25px 25px 25px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
 }
 
 header, footer {
@@ -82,18 +96,12 @@ header {
   width: 100%;
   text-align: center;
 }
-header h1 {
-  color: #FDCB46;
-  font-size: 4em;
-  font-weight: bold;
-}
 
 main {
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 50px 0px;
   background: #FFFFFF;
   width: 100%;
-  text-align: center;
 }
 
 .cartes {
@@ -126,20 +134,24 @@ main {
   color: #633D41;
 }
 .carte-note-enchantee h2 {
-  font-size: 2.5em;
+  padding: 0px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
+  font-size: 1rem;
 }
 .carte-note-enchantee p {
-  font-size: 1.75em;
+  padding: 0px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-family: "Tillana", cursive;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .logo-note {
   height: 75px;
   width: 75px;
   padding: 0px 0px 0px 0px;
-  margin: 0px 15px 0px 15px;
+  margin: 0px 0px 0px 0px;
 }
 
 .carte-chic-francais {
@@ -147,7 +159,7 @@ main {
   background: #FFF5FE;
 }
 .carte-chic-francais h2 {
-  font-size: 1.75em;
+  font-size: 1rem;
   background: linear-gradient(135deg, #d8852e 0%, #905bfd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,8 +167,8 @@ main {
 .carte-chic-francais p {
   padding: 0px 0px 0px 0px;
   margin: 25px 0px 0px 0px;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   font-family: "Libre Baskerville", serif;
   color: #d8852e;
 }
@@ -166,15 +178,15 @@ main {
   background: #F9F9F9;
 }
 .carte-delice-papilles h2 {
-  font-size: 2.5em;
+  font-size: 1rem;
   background: linear-gradient(135deg, #0431df 0%, #178FFA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-delice-papilles p {
   padding: 0px 0px 0px 0px;
-  margin: 15px 0px 0px 0px;
-  font-size: 2.5em;
+  margin: 25px 0px 0px 0px;
+  font-size: 1rem;
   font-family: "Tillana", cursive;
   color: #0431df;
 }
@@ -184,13 +196,15 @@ main {
   background: #FDFFFD;
 }
 .carte-palette-gout h2 {
-  font-size: 2.25em;
+  font-size: 1rem;
   background: linear-gradient(135deg, #3D9339 0%, #BFFF7E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-palette-gout p {
-  font-size: 2.5em;
+  padding: 0px 0px 0px 0px;
+  margin: 25px 0px 0px 0px;
+  font-size: 1rem;
   font-family: "Tillana", cursive;
   color: #3D9339;
 }
@@ -215,8 +229,8 @@ main {
   width: 660px;
   background-color: #579C87;
   color: #FDCB46;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   place-content: center;
   border-radius: 20px;
 }
@@ -235,11 +249,20 @@ footer {
 }
 footer a {
   color: #FDCB46;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.titre-pages-annexes {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 50px 0px;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 /* Début de la mise en page du menu la note enchantée */
+/* Attention à peut-être replacer les titres dans leur éléments de page ? */
 .menu {
   /* border: 1px dashed black; */
   padding: 10px 10px 10px 10px;
@@ -259,7 +282,7 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3em;
+  font-size: 1rem;
   font-family: "Devonshire", cursive;
 }
 
@@ -279,10 +302,6 @@ footer a {
   justify-content: space-between;
   align-items: center;
 }
-.menu-box-titre h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
 
 .menu-separateur {
   padding: 10px 10px 10px 10px;
@@ -295,7 +314,7 @@ footer a {
   /* border: 1px dashed grey; */
   padding: 10px 10px 10px 10px;
   /* margin: 10px 10px 10px 10px; */
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .menu-box-courses-ligne {
@@ -304,11 +323,11 @@ footer a {
   /* margin: 10px 10px 10px 10px; */
   display: flex;
   justify-content: space-between;
-  font-size: 1.25em;
+  font-size: 1rem;
 }
 
 .prix {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .menu-footer {
@@ -320,9 +339,29 @@ footer a {
   justify-content: center;
   align-items: center;
   font-family: "Devonshire", cursive;
-  font-size: 3em;
+  font-size: 1rem;
 }
 
-/* Début de la mise en page du menu la note enchantée */
+/* Début de la mise en page du menu le chic à la française */
+/* Début de la mise en page des mentions légales*/
+/* Attention : mise en page et code associé provisoires */
+.mentions-legales {
+  text-align: justify;
+  padding: 0px 0px 0px 0px;
+  margin: 0px auto 0px auto;
+  width: 1670px;
+}
+.mentions-legales p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.mentions-legales strong {
+  font-weight: bold;
+  color: #579C87;
+}
+.mentions-legales a {
+  color: #579C87;
+  font-weight: normal;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -51,7 +51,7 @@ td:not([align]), th:not([align]) {
 
 /* Attention "Devonshire", "Croissant One" et "Kaushan Script" n'ont qu'une seule weight-size et ne prennent pas en charge le bold */
 /* personnalisation à destination du fichier style.css */
-/* personnalisation globale su site */
+/* 01 : personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -62,14 +62,15 @@ body {
 }
 
 h1 {
-  color: #FDCB46;
   font-size: 1rem;
   font-weight: normal;
+  color: #FDCB46;
 }
 
 h2 {
-  padding: 0px 0px 0px 0px;
-  margin: 25px 25px 25px 25px;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0px 0px 25px 0px;
 }
 
 h3 {
@@ -77,37 +78,60 @@ h3 {
   font-weight: normal;
 }
 
+h4 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 a {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #FDCB46;
   text-decoration: none;
 }
 
-header, footer {
-  background: #579C87;
-}
-
+/* 02 : personnalisation des differentes zones (header, main et footer) */
 header {
-  padding: 0px 0px 0px 0px;
   margin: 0px 0px 50px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 250px;
   width: 100%;
-  text-align: center;
+  background: #579C87;
 }
 
 main {
-  padding: 0px 0px 0px 0px;
   margin: 0px 0px 50px 0px;
-  background: #FFFFFF;
   width: 100%;
+  background: #FFFFFF;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 140px;
+  width: 100%;
+  background: #579C87;
+}
+
+/* 03 : spécificités propre à l'ensemble des pages */
+.top-titre {
+  margin: 0px 0px 25px 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+/* 04 : personnalisation de l'accueil (index.html */
 .cartes {
-  /* border: 1px dashed black; */
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,9 +140,7 @@ main {
 }
 
 .carte-palette-gout, .carte-delice-papilles, .carte-chic-francais, .carte-note-enchantee {
-  /* border: 1px solid silver; */
   box-shadow: 0px 0px 10px 1px #e2e2e2;
-  padding: 0px 0px 0px 0px;
   margin: 50px 50px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -130,28 +152,20 @@ main {
 
 .carte-note-enchantee {
   font-family: "Devonshire", cursive;
-  background: #FCDFDB;
   color: #633D41;
-}
-.carte-note-enchantee h2 {
-  padding: 0px 0px 0px 0px;
-  margin: 25px 0px 0px 0px;
-  font-size: 1rem;
+  background: #FCDFDB;
 }
 .carte-note-enchantee p {
-  padding: 0px 0px 0px 0px;
   margin: 25px 0px 0px 0px;
   font-size: 1rem;
+  font-weight: normal;
   text-transform: uppercase;
   font-family: "Tillana", cursive;
-  font-weight: normal;
 }
 
 .logo-note {
   height: 75px;
   width: 75px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
 }
 
 .carte-chic-francais {
@@ -165,7 +179,6 @@ main {
   -webkit-text-fill-color: transparent;
 }
 .carte-chic-francais p {
-  padding: 0px 0px 0px 0px;
   margin: 25px 0px 0px 0px;
   font-size: 1rem;
   font-weight: normal;
@@ -179,14 +192,15 @@ main {
 }
 .carte-delice-papilles h2 {
   font-size: 1rem;
+  font-weight: normal;
   background: linear-gradient(135deg, #0431df 0%, #178FFA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-delice-papilles p {
-  padding: 0px 0px 0px 0px;
   margin: 25px 0px 0px 0px;
   font-size: 1rem;
+  font-weight: normal;
   font-family: "Tillana", cursive;
   color: #0431df;
 }
@@ -197,171 +211,51 @@ main {
 }
 .carte-palette-gout h2 {
   font-size: 1rem;
+  font-weight: normal;
   background: linear-gradient(135deg, #3D9339 0%, #BFFF7E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-palette-gout p {
-  padding: 0px 0px 0px 0px;
   margin: 25px 0px 0px 0px;
   font-size: 1rem;
+  font-weight: normal;
   font-family: "Tillana", cursive;
   color: #3D9339;
 }
 
 .call {
-  /* border: 1px dashed black; */
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
 .bouton {
-  padding: 0px 0px 0px 0px;
   margin: 50px 0px 50px 0px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  place-content: center;
   height: 120px;
   width: 660px;
-  background-color: #579C87;
-  color: #FDCB46;
-  font-size: 1rem;
-  font-weight: normal;
-  place-content: center;
   border-radius: 20px;
-}
-
-footer {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 140px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-footer a {
+  font-size: 1rem;
+  font-weight: normal;
   color: #FDCB46;
-  font-size: 1rem;
-  font-weight: normal;
+  background-color: #579C87;
 }
 
-.titre-pages-annexes {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 50px 0px;
-  font-size: 1rem;
-  font-weight: normal;
-  text-align: center;
-}
-
-/* Début de la mise en page du menu la note enchantée */
-/* Attention à peut-être replacer les titres dans leur éléments de page ? */
-.menu {
-  /* border: 1px dashed black; */
-  padding: 10px 10px 10px 10px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 0px 10px 1px #e2e2e2;
-  background: #FCDFDB;
-  color: #633D41;
-  height: 1670px;
-  width: 1180px;
-}
-
-.menu-entete {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  margin: 50px 0px 50px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-  font-family: "Devonshire", cursive;
-}
-
-.menu-box {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  margin: 0px 0px 50px 0px;
-  font-family: "Tillana", cursive;
-}
-
-.menu-box-titre {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  margin: 0px 0px 35px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-separateur {
-  padding: 10px 10px 10px 10px;
-  /* margin: 10px 10px 10px 10px; */
-  width: 325px;
-  fill: #633D41;
-}
-
-.menu-box-courses {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  /* margin: 10px 10px 10px 10px; */
-  font-size: 1rem;
-}
-
-.menu-box-courses-ligne {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  /* margin: 10px 10px 10px 10px; */
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-}
-
-.prix {
-  font-weight: normal;
-}
-
-.menu-footer {
-  /* border: 1px dashed grey; */
-  padding: 10px 10px 10px 10px;
-  /* margin: 10px 10px 10px 10px; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Devonshire", cursive;
-  font-size: 1rem;
-}
-
-/* Début de la mise en page du menu le chic à la française */
-/* Début de la mise en page des mentions légales*/
-/* Attention : mise en page et code associé provisoires */
+/* 05 : spécificités propre à toutes les pages menus */
+/* 06 : Spécificités propre à la page menu la note enchantée */
+/* 07 : Spécificités propre à la page menu le chic à la française */
+/* 08 : Spécificités propre à la page menu le délice des papilles */
+/* 09: Spécificités propre à la page menu la palette du goût */
+/* 10 : Spécificités propre à la page des mentions légales */
 .mentions-legales {
   text-align: justify;
-  padding: 0px 0px 0px 0px;
   margin: 0px auto 0px auto;
   width: 1670px;
-}
-.mentions-legales p {
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 20px 0px;
-}
-.mentions-legales strong {
-  font-weight: bold;
-  color: #579C87;
-}
-.mentions-legales a {
-  color: #579C87;
-  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

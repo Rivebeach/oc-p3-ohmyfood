@@ -70,7 +70,6 @@ h1 {
 h2 {
   font-size: 1rem;
   font-weight: normal;
-  margin: 0px 0px 25px 0px;
 }
 
 h3 {
@@ -102,10 +101,12 @@ header {
   width: 100%;
   background: #579C87;
 }
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
 main {
-  margin: 0px 0px 50px 0px;
-  width: 100%;
   background: #FFFFFF;
 }
 
@@ -120,17 +121,27 @@ footer {
   width: 100%;
   background: #579C87;
 }
+footer a {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
 
-/* 03 : spécificités propre à l'ensemble des pages */
+/* 03 : spécificités propre à plusieurs pages */
 .top-titre {
-  margin: 0px 0px 25px 0px;
-  font-size: 1rem;
+  margin: 50px 0px 50px 0px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   color: #000000;
 }
 
-/* 04 : personnalisation de l'accueil (index.html */
+.logo-note-enchantee {
+  margin: 25px 25px 25px 25px;
+  height: 75px;
+  width: 75px;
+}
+
+/* 04 : personnalisation de l'accueil (index.html) */
 .cartes {
   display: flex;
   flex-direction: row;
@@ -155,17 +166,14 @@ footer {
   color: #633D41;
   background: #FCDFDB;
 }
+.carte-note-enchantee img {
+  margin: 0px 0px 25px 0px;
+}
 .carte-note-enchantee p {
-  margin: 25px 0px 0px 0px;
   font-size: 1rem;
   font-weight: normal;
   text-transform: uppercase;
   font-family: "Tillana", cursive;
-}
-
-.logo-note {
-  height: 75px;
-  width: 75px;
 }
 
 .carte-chic-francais {
@@ -179,7 +187,6 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 .carte-chic-francais p {
-  margin: 25px 0px 0px 0px;
   font-size: 1rem;
   font-weight: normal;
   font-family: "Libre Baskerville", serif;
@@ -198,7 +205,6 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 .carte-delice-papilles p {
-  margin: 25px 0px 0px 0px;
   font-size: 1rem;
   font-weight: normal;
   font-family: "Tillana", cursive;
@@ -217,7 +223,6 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 .carte-palette-gout p {
-  margin: 25px 0px 0px 0px;
   font-size: 1rem;
   font-weight: normal;
   font-family: "Tillana", cursive;
@@ -225,6 +230,7 @@ footer {
 }
 
 .call {
+  margin: 0px 0px 50px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -240,22 +246,116 @@ footer {
   height: 120px;
   width: 660px;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: normal;
   color: #FDCB46;
   background-color: #579C87;
 }
 
 /* 05 : spécificités propre à toutes les pages menus */
+.conteneur-carte {
+  text-align: justify;
+  margin: 0px auto 100px auto;
+}
+
+.menu {
+  margin: 0px auto 0px auto;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1670px;
+  width: 1180px;
+  box-shadow: 0px 0px 10px 1px #e2e2e2;
+}
+
+section {
+  border: 1px dashed black;
+}
+
+.menu-top {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: auto 10px 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.entrees {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: auto 10px 25px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.plats {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: auto 10px auto 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.desserts {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: auto 10px auto 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ligne-titre {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ligne {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.separateur {
+  width: 400px;
+}
+
 /* 06 : Spécificités propre à la page menu la note enchantée */
+.menu-bottom {
+  border: 1px dashed black;
+  padding: 10px 10px 10px 10px;
+  margin: auto 10px auto 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* 07 : Spécificités propre à la page menu le chic à la française */
 /* 08 : Spécificités propre à la page menu le délice des papilles */
 /* 09: Spécificités propre à la page menu la palette du goût */
 /* 10 : Spécificités propre à la page des mentions légales */
-.mentions-legales {
-  text-align: justify;
-  margin: 0px auto 0px auto;
-  width: 1670px;
+.conteneur-mentions-legales {
+  margin: 0px auto 100px auto;
+  height: auto;
+  width: 1180px;
 }
 
 /*# sourceMappingURL=style.css.map */

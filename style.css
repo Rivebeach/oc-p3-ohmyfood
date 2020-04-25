@@ -160,6 +160,9 @@ footer a {
   height: 760px;
   width: 540px;
 }
+.carte-palette-gout p, .carte-delice-papilles p, .carte-chic-francais p, .carte-note-enchantee p {
+  padding: 25px 0px 0px 0px;
+}
 
 .carte-note-enchantee {
   font-family: "Devonshire", cursive;
@@ -314,6 +317,10 @@ section {
   width: 100%;
 }
 
+.separateur {
+  width: 300px;
+}
+
 .ligne-titre {
   border: 1px dashed black;
   padding: 10px 10px 10px 10px;
@@ -330,10 +337,6 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-.separateur {
-  width: 400px;
 }
 
 /* 06 : Spécificités propre à la page menu la note enchantée */

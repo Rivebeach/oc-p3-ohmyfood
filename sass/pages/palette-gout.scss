@@ -1,9 +1,12 @@
+/* personnalisation à destination du fichier index.css */
+
 /* import du reset css : "minireset.css v0.0.6" */
 
-@import "libs/reset.scss";
+@import "../base/reset.scss";
 
-/* Attention "Devonshire", "Croissant One" et "Kaushan Script" n'ont qu'une seule weight-size et ne prennent pas en charge le bold */
-/* personnalisation à destination du fichier style.css */
+/* imports des variables */
+
+@import "../utils/_palette-couleur";
 
 /* 01 : personnalisation globale su site */ 
 
@@ -16,31 +19,9 @@ body {
     padding: 0px 0px 140px 0px;
 }
 
-h1 {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #FDCB46;
-}
-
-h2 {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-h3 {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-h4 {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
 a {
     font-size: 1rem;
-    font-weight: normal;
-    color: #FDCB46;
+    color: $couleur-jaune;
     text-decoration: none;
 }
 
@@ -55,10 +36,11 @@ header {
     text-align: center;
     height: 250px;
     width: 100%;
-    background: #579C87;
+    background: $couleur-vert;
         h1 {
-            font-size: 2.50rem;
+            font-size: 2.75rem;
             font-weight: bold;
+            color: $couleur-jaune;
         }
 }
 
@@ -75,7 +57,7 @@ footer {
     bottom: 0;
     height: 140px;
     width: 100%;
-    background: #579C87;
+    background: $couleur-vert;
         a {
             font-size: 1.25rem;
             font-weight: normal;
@@ -89,7 +71,6 @@ footer {
     font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
-    color: #000000;
 }
 
 .logo-note-enchantee {
@@ -125,8 +106,8 @@ footer {
 .carte-note-enchantee {
     @extend %carte;
     font-family: 'Devonshire', cursive;
-    color: #633D41;
-    background: #FCDFDB;
+    color: $couleur-note-police;
+    background: $couleur-note-fond;
     img {
         margin: 0px 0px 25px 0px;
     }
@@ -141,10 +122,10 @@ footer {
 .carte-chic-francais {
     @extend %carte;
     font-family: 'Croissant One', cursive;
-    background: #FFF5FE;
+    background: $couleur-chic-fond;
     h2 {
         font-size: 1rem;
-        background: linear-gradient(135deg, #d8852e 0%,#905bfd 100%);
+        background: $couleur-chic-degrade;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -152,18 +133,18 @@ footer {
         font-size: 1rem;
         font-weight: normal;
         font-family: 'Libre Baskerville', serif;
-        color: #d8852e;
+        color: $couleur-chic-brun;
     }
 }
 
 .carte-delice-papilles {
     @extend %carte;
     font-family: 'Dancing Script', cursive;
-    background: #F9F9F9;
+    background: $couleur-delice-fond;
     h2 {
         font-size: 1rem;
         font-weight: normal;
-        background: linear-gradient(135deg, #0431df 0%,#178FFA 100%);
+        background: $couleur-delice-degrade;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -171,18 +152,18 @@ footer {
         font-size: 1rem;
         font-weight: normal;
         font-family: 'Tillana', cursive;;
-        color: #0431df;
+        color: $couleur-delice-bleu-top;
     }
 }
 
 .carte-palette-gout {
     @extend %carte;
     font-family: 'Kaushan Script', cursive;
-    background: #FDFFFD;
+    background: $couleur-palette-fond;
     h2 {
         font-size: 1rem;
         font-weight: normal;
-        background: linear-gradient(135deg, #3D9339 0%,#BFFF7E 100%);
+        background: $couleur-palette-degrade;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -190,7 +171,10 @@ footer {
         font-size: 1rem;
         font-weight: normal;
         font-family: 'Tillana', cursive;
-        color: #3D9339;
+        color: #41963C;
+        /* color: $couleur-palette-police; */
+        /* pourquoi est-ce que tu ne veux pas me charger la couleur depuis sa variable "$couleur-palette-police" ? */
+        /* alors que tu me charges toutes les autres couleurs depuis le même fichier via [@import "../utils/_palette-couleur";] */
     }
 }
 
@@ -213,11 +197,11 @@ footer {
     border-radius: 20px;
     font-size: 1.5rem;
     font-weight: normal;
-    color: #FDCB46;
-    background-color: #579C87;
+    color: $couleur-jaune;
+    background-color: $couleur-vert;
 }
 
-/* 05 : spécificités propre à toutes les pages menus */
+/* 05 : spécificités propre à toutes les pages menus
 
 .conteneur-carte {
     text-align: justify;
@@ -304,23 +288,97 @@ section {
 }
 
 /* 06 : Spécificités propre à la page menu la note enchantée */
+/* 07 : Spécificités propre à la page menu le chic à la française */
+/* 08 : Spécificités propre à la page menu le délice des papilles */
+/* 09 : Spécificités propre à la page menu la palette du goût */
 
-.menu-bottom {
-    border: 1px dashed black;
+.conteneur-carte {
+    text-align: justify;
+    margin: 0px auto 100px auto;
+
+}
+
+.menu {
+    margin: 0px auto 0px auto;
     padding: 10px 10px 10px 10px;
-    margin: auto 10px auto 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    height: 1670px;
+    width: 1180px;
+    font-family: 'Tillana', cursive;
+    background: $couleur-palette-fond;
+    box-shadow: 0px 0px 10px 1px #e2e2e2;
+}
+
+.menu-top {
+    padding: 10px 10px 10px 10px;
+    margin: auto 10px 25px auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    background: $couleur-palette-degrade;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.entrees {
+    padding: 10px 10px 10px 10px;
+    margin: auto 10px 25px auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
+.plats {
+    padding: 10px 10px 10px 10px;
+    margin: auto 10px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
+.desserts {
+    padding: 10px 10px 10px 10px;
+    margin: auto 10px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-/* 07 : Spécificités propre à la page menu le chic à la française */
-/* 08 : Spécificités propre à la page menu le délice des papilles */
-/* 09: Spécificités propre à la page menu la palette du goût */
+.separateur {
+    width: 300px;
+}
+
+.ligne-titre {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+
+.ligne {
+    padding: 10px 50px 10px 50px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .prix {
+        font-size: 1.25rem;
+    }
+}
+
 /* 10 : Spécificités propre à la page des mentions légales */
 
 .conteneur-mentions-legales {

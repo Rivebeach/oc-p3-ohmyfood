@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* personnalisation à destination du fichier index.css */
 /* import du reset css : "minireset.css v0.0.6" */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -49,8 +50,8 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
-/* Attention "Devonshire", "Croissant One" et "Kaushan Script" n'ont qu'une seule weight-size et ne prennent pas en charge le bold */
-/* personnalisation à destination du fichier style.css */
+/* imports des variables */
+/* Palette des couleurs */
 /* 01 : personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
@@ -61,30 +62,8 @@ body {
   padding: 0px 0px 140px 0px;
 }
 
-h1 {
-  font-size: 1rem;
-  font-weight: normal;
-  color: #FDCB46;
-}
-
-h2 {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
 a {
   font-size: 1rem;
-  font-weight: normal;
   color: #FDCB46;
   text-decoration: none;
 }
@@ -102,8 +81,9 @@ header {
   background: #579C87;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: bold;
+  color: #FDCB46;
 }
 
 main {
@@ -132,7 +112,6 @@ footer a {
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
-  color: #000000;
 }
 
 .logo-note-enchantee {
@@ -169,11 +148,15 @@ footer a {
   color: #633D41;
   background: #FCDFDB;
 }
+.carte-note-enchantee h2 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
 .carte-note-enchantee img {
   margin: 0px 0px 25px 0px;
 }
 .carte-note-enchantee p {
-  font-size: 1rem;
+  font-size: 2.25rem;
   font-weight: normal;
   text-transform: uppercase;
   font-family: "Tillana", cursive;
@@ -184,13 +167,13 @@ footer a {
   background: #FFF5FE;
 }
 .carte-chic-francais h2 {
-  font-size: 1rem;
-  background: linear-gradient(135deg, #d8852e 0%, #905bfd 100%);
+  font-size: 1.75rem;
+  background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-chic-francais p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
   font-family: "Libre Baskerville", serif;
   color: #d8852e;
@@ -201,17 +184,17 @@ footer a {
   background: #F9F9F9;
 }
 .carte-delice-papilles h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
-  background: linear-gradient(135deg, #0431df 0%, #178FFA 100%);
+  background: linear-gradient(135deg, #0228DD 0%, #229DF9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-delice-papilles p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
   font-family: "Tillana", cursive;
-  color: #0431df;
+  color: #0228DD;
 }
 
 .carte-palette-gout {
@@ -219,17 +202,20 @@ footer a {
   background: #FDFFFD;
 }
 .carte-palette-gout h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
-  background: linear-gradient(135deg, #3D9339 0%, #BFFF7E 100%);
+  background: linear-gradient(135deg, #41963C 0%, #BFFA8A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carte-palette-gout p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: normal;
   font-family: "Tillana", cursive;
-  color: #3D9339;
+  color: #41963C;
+  /* color: $couleur-palette-police; */
+  /* pourquoi est-ce que tu ne veux pas me charger la couleur depuis sa variable "$couleur-palette-police" ? */
+  /* alors que tu me charges toutes les autres couleurs depuis le même fichier via [@import "../utils/_palette-couleur";] */
 }
 
 .call {
@@ -353,7 +339,7 @@ section {
 
 /* 07 : Spécificités propre à la page menu le chic à la française */
 /* 08 : Spécificités propre à la page menu le délice des papilles */
-/* 09: Spécificités propre à la page menu la palette du goût */
+/* 09 : Spécificités propre à la page menu la palette du goût */
 /* 10 : Spécificités propre à la page des mentions légales */
 .conteneur-mentions-legales {
   margin: 0px auto 100px auto;
@@ -361,4 +347,4 @@ section {
   width: 1180px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */

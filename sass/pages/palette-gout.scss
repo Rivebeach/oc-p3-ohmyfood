@@ -13,6 +13,15 @@
 html { 
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    @media all and (max-width: 1024px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -37,11 +46,11 @@ header {
     height: 250px;
     width: 100%;
     background: $couleur-vert;
-        h1 {
-            font-size: 2.75rem;
-            font-weight: bold;
-            color: $couleur-jaune;
-        }
+    h1 {
+        font-size: 2.75rem;
+        font-weight: bold;
+        color: $couleur-jaune;
+    }
 }
 
 main {
@@ -293,7 +302,10 @@ section {
 /* 09 : Spécificités propre à la page menu la palette du goût */
 
 .conteneur-carte {
-    text-align: justify;
+    /* text-align: justify; POURQUOI */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px auto 100px auto;
 
 }
@@ -306,6 +318,18 @@ section {
     align-items: center;
     height: 1670px;
     width: 1180px;
+    @media all and (max-width: 1024px) {
+        height: 100%;
+        width: 80%;
+    }
+    @media all and (max-width: 768px) {
+        height: 100%;
+        width: 90%;
+    }
+    @media all and (max-width: 500px) {
+        height: 100%;
+        width: 100%;
+    }
     font-family: 'Tillana', cursive;
     background: $couleur-palette-fond;
     box-shadow: 0px 0px 10px 1px #e2e2e2;
@@ -324,6 +348,13 @@ section {
     background: $couleur-palette-degrade;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 2.5rem;
+    @media all and (max-width: 500px) {
+        font-size: 2.50rem;
+    }
 }
 
 .entrees {
@@ -355,6 +386,15 @@ section {
 
 .separateur {
     width: 300px;
+    @media all and (max-width: 1024px) {
+        width: 200px;
+    }
+    @media all and (max-width: 768px) {
+        width: 175px;
+    }
+    @media all and (max-width: 500px) {
+        display: none;
+    }
 }
 
 .ligne-titre {
@@ -362,10 +402,14 @@ section {
     margin: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    h4 {
-        font-size: 1.25rem;
+    @media all and (max-width: 500px) {
+        justify-content: center;
     }
+    width: 100%;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 .ligne {
@@ -374,6 +418,10 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media all and (max-width: 500px) {
+        display: block;
+        text-align: center;
+    }
     .prix {
         font-size: 1.25rem;
     }

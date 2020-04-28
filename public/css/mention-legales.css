@@ -57,6 +57,21 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 body {
   padding: 0px 0px 140px 0px;
@@ -341,6 +356,24 @@ section {
   margin: 0px auto 100px auto;
   height: auto;
   width: 1180px;
+}
+@media all and (max-width: 1024px) {
+  .conteneur-mentions-legales {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .conteneur-mentions-legales {
+    height: 100%;
+    width: 90%;
+  }
+}
+@media all and (max-width: 500px) {
+  .conteneur-mentions-legales {
+    height: 100%;
+    width: 90%;
+  }
 }
 .conteneur-mentions-legales h3 {
   padding: 10px 0px 10px 0px;

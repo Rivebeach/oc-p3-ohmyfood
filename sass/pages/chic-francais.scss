@@ -13,6 +13,15 @@
 html { 
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    @media all and (max-width: 1024px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -291,7 +300,10 @@ section {
 /* 07 : Spécificités propre à la page menu le chic à la française */
 
 .conteneur-carte {
-    text-align: justify;
+    /* text-align: justify; POURQUOI */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px auto 100px auto;
 
 }
@@ -304,6 +316,18 @@ section {
     align-items: center;
     height: 1670px;
     width: 1180px;
+    @media all and (max-width: 1024px) {
+        height: 100%;
+        width: 80%;
+    }
+    @media all and (max-width: 768px) {
+        height: 100%;
+        width: 90%;
+    }
+    @media all and (max-width: 500px) {
+        height: 100%;
+        width: 100%;
+    }
     font-family: 'Libre Baskerville', serif;
     background: $couleur-chic-fond;
     box-shadow: 0px 0px 10px 1px #e2e2e2;
@@ -322,7 +346,14 @@ section {
     background: $couleur-chic-degrade;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+}
+
+h3 {
+    font-size: 2rem;
+    @media all and (max-width: 500px) {
+        font-size: 1.50;
+        text-align: center;
+    }
 }
 
 .entrees {
@@ -333,10 +364,19 @@ section {
     align-items: center;
     width: 100%;
     color: $couleur-chic-brun;
-        .separateur {
-            width: 300px;
-            fill: $couleur-chic-brun;
+    .separateur {
+        width: 300px;
+        fill: $couleur-chic-brun;
+        @media all and (max-width: 1024px) {
+            width: 200px;
         }
+        @media all and (max-width: 768px) {
+            width: 175px;
+        }
+        @media all and (max-width: 500px) {
+            display: none;
+        }
+    }
 }
 
 .plats {
@@ -350,6 +390,15 @@ section {
     .separateur {
         width: 300px;
         fill: $couleur-chic-magenta;
+        @media all and (max-width: 1024px) {
+            width: 200px;
+        }
+        @media all and (max-width: 768px) {
+            width: 175px;
+        }
+        @media all and (max-width: 500px) {
+            display: none;
+        }
     }
 }
 
@@ -364,6 +413,15 @@ section {
     .separateur {
         width: 300px;
         fill:$couleur-chic-bleu-magenta;
+        @media all and (max-width: 1024px) {
+            width: 200px;
+        }
+        @media all and (max-width: 768px) {
+            width: 175px;
+        }
+        @media all and (max-width: 500px) {
+            display: none;
+        }
     }
 }
 
@@ -372,6 +430,9 @@ section {
     margin: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 500px) {
+        justify-content: center;
+    }
     width: 100%;
 }
 
@@ -386,6 +447,10 @@ h4 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media all and (max-width: 500px) {
+        display: block;
+        text-align: center;
+    }
 }
 
 /* 08 : Spécificités propre à la page menu le délice des papilles */

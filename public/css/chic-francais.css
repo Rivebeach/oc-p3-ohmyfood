@@ -57,6 +57,21 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 body {
   padding: 0px 0px 140px 0px;
@@ -326,7 +341,10 @@ section {
 /* 06 : Spécificités propre à la page menu la note enchantée */
 /* 07 : Spécificités propre à la page menu le chic à la française */
 .conteneur-carte {
-  text-align: justify;
+  /* text-align: justify; POURQUOI */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0px auto 100px auto;
 }
 
@@ -341,6 +359,24 @@ section {
   font-family: "Libre Baskerville", serif;
   background: #FFF5FE;
   box-shadow: 0px 0px 10px 1px #e2e2e2;
+}
+@media all and (max-width: 1024px) {
+  .menu {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .menu {
+    height: 100%;
+    width: 90%;
+  }
+}
+@media all and (max-width: 500px) {
+  .menu {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .menu-top {
@@ -358,6 +394,16 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  font-size: 2rem;
+}
+@media all and (max-width: 500px) {
+  h3 {
+    font-size: 1.5;
+    text-align: center;
+  }
+}
+
 .entrees {
   padding: 10px 10px 10px 10px;
   margin: auto 10px 25px auto;
@@ -370,6 +416,21 @@ section {
 .entrees .separateur {
   width: 300px;
   fill: #d8852e;
+}
+@media all and (max-width: 1024px) {
+  .entrees .separateur {
+    width: 200px;
+  }
+}
+@media all and (max-width: 768px) {
+  .entrees .separateur {
+    width: 175px;
+  }
+}
+@media all and (max-width: 500px) {
+  .entrees .separateur {
+    display: none;
+  }
 }
 
 .plats {
@@ -385,6 +446,21 @@ section {
   width: 300px;
   fill: #a56799;
 }
+@media all and (max-width: 1024px) {
+  .plats .separateur {
+    width: 200px;
+  }
+}
+@media all and (max-width: 768px) {
+  .plats .separateur {
+    width: 175px;
+  }
+}
+@media all and (max-width: 500px) {
+  .plats .separateur {
+    display: none;
+  }
+}
 
 .desserts {
   padding: 10px 10px 10px 10px;
@@ -399,6 +475,21 @@ section {
   width: 300px;
   fill: #905bfd;
 }
+@media all and (max-width: 1024px) {
+  .desserts .separateur {
+    width: 200px;
+  }
+}
+@media all and (max-width: 768px) {
+  .desserts .separateur {
+    width: 175px;
+  }
+}
+@media all and (max-width: 500px) {
+  .desserts .separateur {
+    display: none;
+  }
+}
 
 .ligne-titre {
   padding: 10px 10px 10px 10px;
@@ -406,6 +497,11 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media all and (max-width: 500px) {
+  .ligne-titre {
+    justify-content: center;
+  }
 }
 
 h4 {
@@ -419,6 +515,12 @@ h4 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media all and (max-width: 500px) {
+  .ligne {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* 08 : Spécificités propre à la page menu le délice des papilles */

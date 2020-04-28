@@ -55,7 +55,12 @@ td:not([align]), th:not([align]) {
 /* 01 : personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+}
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -343,6 +348,13 @@ section {
   color: #633D41;
   background: #FCDFDB;
 }
+@media all and (max-width: 500px) {
+  .menu {
+    margin: 50px 0px 50px 0px;
+    height: 100%;
+    width: 320px;
+  }
+}
 
 .menu-top {
   padding: 10px 10px 10px 10px;
@@ -390,6 +402,11 @@ h3 {
   width: 300px;
   fill: #633D41;
 }
+@media all and (max-width: 500px) {
+  .separateur {
+    display: none;
+  }
+}
 
 .ligne-titre {
   padding: 10px 10px 10px 10px;
@@ -397,6 +414,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media all and (max-width: 500px) {
+  .ligne-titre {
+    justify-content: center;
+  }
 }
 
 h4 {
@@ -411,6 +433,12 @@ h4 {
   justify-content: space-between;
   width: 100%;
   font-size: 1rem;
+}
+@media all and (max-width: 500px) {
+  .ligne {
+    display: block;
+    text-align: center;
+  }
 }
 
 .prix {
@@ -431,6 +459,11 @@ h4 {
 .menu-bottom h3 {
   font-family: "Devonshire", cursive;
   font-size: 3rem;
+}
+@media all and (max-width: 500px) {
+  .menu-bottom {
+    display: none;
+  }
 }
 
 /* 07 : Spécificités propre à la page menu le chic à la française */

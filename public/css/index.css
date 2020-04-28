@@ -55,7 +55,12 @@ td:not([align]), th:not([align]) {
 /* 01 : personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+}
+@media all and (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -138,6 +143,20 @@ footer a {
   align-items: center;
   height: 760px;
   width: 540px;
+}
+@media all and (max-width: 768px) {
+  .carte-palette-gout, .carte-delice-papilles, .carte-chic-francais, .carte-note-enchantee {
+    margin: 50px 10px 50px 10px;
+    height: 501px;
+    width: 356px;
+  }
+}
+@media all and (max-width: 500px) {
+  .carte-palette-gout, .carte-delice-papilles, .carte-chic-francais, .carte-note-enchantee {
+    margin: 50px 0px 50px 0px;
+    height: 450px;
+    width: 320px;
+  }
 }
 .carte-palette-gout p, .carte-delice-papilles p, .carte-chic-francais p, .carte-note-enchantee p {
   padding: 25px 0px 0px 0px;

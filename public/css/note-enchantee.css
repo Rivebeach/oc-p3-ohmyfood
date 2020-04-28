@@ -55,7 +55,17 @@ td:not([align]), th:not([align]) {
 /* 01 : personnalisation globale su site */
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+}
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 @media all and (max-width: 500px) {
   html {
@@ -113,7 +123,7 @@ footer a {
 
 /* 03 : spécificités propre à plusieurs pages */
 .top-titre {
-  margin: 50px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
@@ -330,12 +340,15 @@ section {
 
 06 : Spécificités propre à la page menu la note enchantée */
 .conteneur-carte {
-  text-align: justify;
+  /* text-align: justify; POURQUOI */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0px auto 100px auto;
 }
 
 .menu {
-  margin: 0px auto 0px auto;
+  /*margin: 0px 0px 0px 0px;*/
   padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
@@ -348,11 +361,22 @@ section {
   color: #633D41;
   background: #FCDFDB;
 }
+@media all and (max-width: 1024px) {
+  .menu {
+    height: 100%;
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .menu {
+    height: 100%;
+    width: 90%;
+  }
+}
 @media all and (max-width: 500px) {
   .menu {
-    margin: 50px 0px 50px 0px;
     height: 100%;
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -401,6 +425,16 @@ h3 {
 .separateur {
   width: 300px;
   fill: #633D41;
+}
+@media all and (max-width: 1024px) {
+  .separateur {
+    width: 200px;
+  }
+}
+@media all and (max-width: 768px) {
+  .separateur {
+    width: 175px;
+  }
 }
 @media all and (max-width: 500px) {
   .separateur {

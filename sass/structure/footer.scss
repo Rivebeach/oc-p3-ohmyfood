@@ -1,0 +1,23 @@
+/* strucre de base du footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 140px;
+    @media all and (max-width: 500px) {
+        height: 100px;
+    }
+    width: 100%;
+    background: $couleur-vert;
+    a {
+        font-size: 1.25rem;
+        @media all and (max-width: 500px) {
+            font-size: 0.8rem;
+        }
+        font-weight: normal;
+    }
+}

@@ -1,303 +1,16 @@
-/* personnalisation à destination du fichier index.css */
+/* import des différents "outils" */
 
-/* import du reset css : "minireset.css v0.0.6" */
+@import "../outils/reset.scss";
+@import "../outils/palette-couleur.scss";
+@import "../outils/bouton.scss";
 
-@import "../base/reset.scss";
+/* import des éléments "structure" de page */
 
-/* imports des variables */
+@import "../structure/base.scss";
+@import "../structure/header.scss";
+@import "../structure/footer.scss";
 
-@import "../utils/_palette-couleur";
-
-/* 01 : personnalisation globale su site */ 
-
-html { 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    @media all and (max-width: 1024px) {
-        font-size: 18px;
-    }
-    @media all and (max-width: 768px) {
-        font-size: 16px;
-    }
-    @media all and (max-width: 500px) {
-        font-size: 14px;
-    }
-}
-
-body {
-    padding: 0px 0px 140px 0px;
-}
-
-a {
-    font-size: 1rem;
-    color: $couleur-jaune;
-    text-decoration: none;
-}
-
-/* 02 : personnalisation des differentes zones (header, main et footer) */ 
-
-header {
-    margin: 0px 0px 50px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    background: $couleur-vert;
-        h1 {
-            font-size: 2.75rem;
-            font-weight: bold;
-            color: $couleur-jaune;
-        }
-}
-
-main {
-    background: #FFFFFF;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    height: 140px;
-    width: 100%;
-    background: $couleur-vert;
-        a {
-            font-size: 1.25rem;
-            font-weight: normal;
-        }
-}
-
-/* 03 : spécificités propre à plusieurs pages */ 
-
-.top-titre {
-    margin: 50px 0px 50px 0px;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.logo-note-enchantee {
-    margin: 25px 25px 25px 25px;
-    height: 75px;
-    width: 75px;
-}
-
-/* 04 : personnalisation de l'accueil (index.html) */ 
-
-.cartes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-%carte {
-    box-shadow: 0px 0px 10px 1px #e2e2e2;
-    margin: 50px 50px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 760px;
-    width: 540px;
-        p{
-            padding: 25px 0px 0px 0px;
-        }
-}
-
-.carte-note-enchantee {
-    @extend %carte;
-    font-family: 'Devonshire', cursive;
-    color: $couleur-note-police;
-    background: $couleur-note-fond;
-    img {
-        margin: 0px 0px 25px 0px;
-    }
-    p {
-        font-size: 1rem;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-family: 'Tillana', cursive;
-    }
-}
-
-.carte-chic-francais {
-    @extend %carte;
-    font-family: 'Croissant One', cursive;
-    background: $couleur-chic-fond;
-    h2 {
-        font-size: 1rem;
-        background: $couleur-chic-degrade;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    p {
-        font-size: 1rem;
-        font-weight: normal;
-        font-family: 'Libre Baskerville', serif;
-        color: $couleur-chic-brun;
-    }
-}
-
-.carte-delice-papilles {
-    @extend %carte;
-    font-family: 'Dancing Script', cursive;
-    background: $couleur-delice-fond;
-    h2 {
-        font-size: 1rem;
-        font-weight: normal;
-        background: $couleur-delice-degrade;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    p {
-        font-size: 1rem;
-        font-weight: normal;
-        font-family: 'Tillana', cursive;;
-        color: $couleur-delice-bleu-top;
-    }
-}
-
-.carte-palette-gout {
-    @extend %carte;
-    font-family: 'Kaushan Script', cursive;
-    background: $couleur-palette-fond;
-    h2 {
-        font-size: 1rem;
-        font-weight: normal;
-        background: $couleur-palette-degrade;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    p {
-        font-size: 1rem;
-        font-weight: normal;
-        font-family: 'Tillana', cursive;
-        color: #41963C;
-        /* color: $couleur-palette-police; */
-        /* pourquoi est-ce que tu ne veux pas me charger la couleur depuis sa variable "$couleur-palette-police" ? */
-        /* alors que tu me charges toutes les autres couleurs depuis le même fichier via [@import "../utils/_palette-couleur";] */
-    }
-}
-
-.call {
-    margin: 0px 0px 50px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.bouton {
-    margin: 50px 0px 50px 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    place-content: center;
-    height: 120px;
-    width: 660px;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: $couleur-jaune;
-    background-color: $couleur-vert;
-}
-
-/* 05 : spécificités propre à toutes les pages menus
-
-.conteneur-carte {
-    text-align: justify;
-    margin: 0px auto 100px auto;
-
-}
-
-.menu {
-    margin: 0px auto 0px auto;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1670px;
-    width: 1180px;
-    box-shadow: 0px 0px 10px 1px #e2e2e2;
-}
-
-section {
-    border: 1px dashed black;
-}
-
-.menu-top {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: auto 10px 25px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.entrees {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: auto 10px 25px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.plats {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: auto 10px auto 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.desserts {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: auto 10px auto 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.separateur {
-    width: 300px;
-}
-
-.ligne-titre {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.ligne {
-    border: 1px dashed black;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* 06 : Spécificités propre à la page menu la note enchantée */
-/* 07 : Spécificités propre à la page menu le chic à la française */
+/* mise en page à destination de la page chic-francais.html et du fichier de style associé chic-francais.css */
 
 .conteneur-carte {
     /* text-align: justify; POURQUOI */
@@ -306,6 +19,19 @@ section {
     align-items: center;
     margin: 0px auto 100px auto;
 
+}
+
+h3 {
+    font-size: 2rem;
+    @media all and (max-width: 500px) {
+        font-size: 1.50;
+        text-align: center;
+    }
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold
 }
 
 .menu {
@@ -348,14 +74,6 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-h3 {
-    font-size: 2rem;
-    @media all and (max-width: 500px) {
-        font-size: 1.50;
-        text-align: center;
-    }
-}
-
 .entrees {
     padding: 10px 10px 10px 10px;
     margin: auto 10px 25px auto;
@@ -363,7 +81,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: $couleur-chic-brun;
     .separateur {
         width: 300px;
         fill: $couleur-chic-brun;
@@ -386,7 +103,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: $couleur-chic-magenta;
     .separateur {
         width: 300px;
         fill: $couleur-chic-magenta;
@@ -409,7 +125,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: $couleur-chic-bleu-magenta;
     .separateur {
         width: 300px;
         fill:$couleur-chic-bleu-magenta;
@@ -436,11 +151,6 @@ h3 {
     width: 100%;
 }
 
-h4 {
-    font-size: 1.25rem;
-    font-weight: bold
-}
-
 .ligne {
     padding: 10px 50px 10px 50px;
     margin: 10px 10px 10px 10px;
@@ -451,14 +161,4 @@ h4 {
         display: block;
         text-align: center;
     }
-}
-
-/* 08 : Spécificités propre à la page menu le délice des papilles */
-/* 09 : Spécificités propre à la page menu la palette du goût */
-/* 10 : Spécificités propre à la page des mentions légales */
-
-.conteneur-mentions-legales {
-    margin: 0px auto 100px auto;
-    height: auto;
-    width: 1180px;
 }

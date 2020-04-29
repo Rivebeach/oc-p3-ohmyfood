@@ -1,6 +1,5 @@
 @charset "UTF-8";
-/* personnalisation à destination du fichier index.css */
-/* import du reset css : "minireset.css v0.0.6" */
+/* import des différents "outils" */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -50,9 +49,9 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
-/* imports des variables */
 /* Palette des couleurs */
-/* 01 : personnalisation globale su site */
+/* import des éléments "structure" de page */
+/* strucre de base de chaque page */
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -76,6 +75,11 @@ html {
 body {
   padding: 0px 0px 140px 0px;
 }
+@media all and (max-width: 500px) {
+  body {
+    padding: 0px 0px 100px 0px;
+  }
+}
 
 a {
   font-size: 1rem;
@@ -83,7 +87,14 @@ a {
   text-decoration: none;
 }
 
-/* 02 : personnalisation des differentes zones (header, main et footer) */
+.top-titre {
+  margin: 50px 0px 50px 0px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* strucre de base du header */
 header {
   margin: 0px 0px 50px 0px;
   display: flex;
@@ -95,16 +106,18 @@ header {
   width: 100%;
   background: #579C87;
 }
+@media all and (max-width: 500px) {
+  header {
+    height: 150px;
+  }
+}
 header h1 {
   font-size: 2.75rem;
   font-weight: bold;
   color: #FDCB46;
 }
 
-main {
-  background: #FFFFFF;
-}
-
+/* strucre de base du footer */
 footer {
   display: flex;
   flex-direction: row;
@@ -116,277 +129,55 @@ footer {
   width: 100%;
   background: #579C87;
 }
+@media all and (max-width: 500px) {
+  footer {
+    height: 100px;
+  }
+}
 footer a {
   font-size: 1.25rem;
   font-weight: normal;
 }
-
-/* 03 : spécificités propre à plusieurs pages */
-.top-titre {
-  margin: 50px 0px 50px 0px;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
+@media all and (max-width: 500px) {
+  footer a {
+    font-size: 0.8rem;
+  }
 }
 
-.logo-note-enchantee {
-  margin: 25px 25px 25px 25px;
-  height: 75px;
-  width: 75px;
-}
-
-/* 04 : personnalisation de l'accueil (index.html) */
-.cartes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.carte-palette-gout, .carte-delice-papilles, .carte-chic-francais, .carte-note-enchantee {
-  box-shadow: 0px 0px 10px 1px #e2e2e2;
-  margin: 50px 50px 50px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 760px;
-  width: 540px;
-}
-.carte-palette-gout p, .carte-delice-papilles p, .carte-chic-francais p, .carte-note-enchantee p {
-  padding: 25px 0px 0px 0px;
-}
-
-.carte-note-enchantee {
-  font-family: "Devonshire", cursive;
-  color: #633D41;
-  background: #FCDFDB;
-}
-.carte-note-enchantee img {
-  margin: 0px 0px 25px 0px;
-}
-.carte-note-enchantee p {
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-family: "Tillana", cursive;
-}
-
-.carte-chic-francais {
-  font-family: "Croissant One", cursive;
-  background: #FFF5FE;
-}
-.carte-chic-francais h2 {
-  font-size: 1rem;
-  background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.carte-chic-francais p {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "Libre Baskerville", serif;
-  color: #d8852e;
-}
-
-.carte-delice-papilles {
-  font-family: "Dancing Script", cursive;
-  background: #F9F9F9;
-}
-.carte-delice-papilles h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  background: linear-gradient(135deg, #0228DD 0%, #229DF9 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.carte-delice-papilles p {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "Tillana", cursive;
-  color: #0228DD;
-}
-
-.carte-palette-gout {
-  font-family: "Kaushan Script", cursive;
-  background: #FDFFFD;
-}
-.carte-palette-gout h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  background: linear-gradient(135deg, #41963C 0%, #BFFA8A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.carte-palette-gout p {
-  font-size: 1rem;
-  font-weight: normal;
-  font-family: "Tillana", cursive;
-  color: #41963C;
-  /* color: $couleur-palette-police; */
-  /* pourquoi est-ce que tu ne veux pas me charger la couleur depuis sa variable "$couleur-palette-police" ? */
-  /* alors que tu me charges toutes les autres couleurs depuis le même fichier via [@import "../utils/_palette-couleur";] */
-}
-
-.call {
-  margin: 0px 0px 50px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
-
-.bouton {
-  margin: 50px 0px 50px 0px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  place-content: center;
-  height: 120px;
-  width: 660px;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: #FDCB46;
-  background-color: #579C87;
-}
-
-/* 05 : spécificités propre à toutes les pages menus */
-.conteneur-carte {
-  text-align: justify;
-  margin: 0px auto 100px auto;
-}
-
-.menu {
-  margin: 0px auto 0px auto;
-  padding: 10px 10px 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 1670px;
-  width: 1180px;
-  box-shadow: 0px 0px 10px 1px #e2e2e2;
-}
-
-section {
-  border: 1px dashed black;
-}
-
-.menu-top {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: auto 10px 25px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.entrees {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: auto 10px 25px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.plats {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: auto 10px auto 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.desserts {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: auto 10px auto 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.separateur {
-  width: 300px;
-}
-
-.ligne-titre {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 10px 10px 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.ligne {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 10px 10px 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* 06 : Spécificités propre à la page menu la note enchantée */
-.menu-bottom {
-  border: 1px dashed black;
-  padding: 10px 10px 10px 10px;
-  margin: auto 10px auto 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/* 07 : Spécificités propre à la page menu le chic à la française */
-/* 08 : Spécificités propre à la page menu le délice des papilles */
-/* 09 : Spécificités propre à la page menu la palette du goût */
-/* 10 : Spécificités propre à la page des mentions légales */
+/* mise en page à destination de la page mentions-legales.html et du fichier de style mentions-legales.css */
 .conteneur-mentions-legales {
   margin: 0px auto 100px auto;
-  height: auto;
   width: 1180px;
 }
 @media all and (max-width: 1024px) {
   .conteneur-mentions-legales {
-    height: 100%;
     width: 80%;
   }
 }
 @media all and (max-width: 768px) {
   .conteneur-mentions-legales {
-    height: 100%;
     width: 90%;
   }
 }
 @media all and (max-width: 500px) {
   .conteneur-mentions-legales {
-    height: 100%;
     width: 90%;
   }
 }
 .conteneur-mentions-legales h3 {
   padding: 10px 0px 10px 0px;
-  font-size: 1.15rem;
+  font-size: 0.8rem;
   text-align: left;
   font-weight: bold;
   color: #579C87;
 }
 .conteneur-mentions-legales p {
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 0.8rem;
   text-align: justify;
 }
 .conteneur-mentions-legales a {
+  font-size: 0.8rem;
   color: #579C87;
 }
 

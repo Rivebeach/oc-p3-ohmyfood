@@ -1,0 +1,35 @@
+/* strucre de base de chaque page */
+
+html { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    @media all and (max-width: 1024px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 500px) {
+        font-size: 14px;
+    }
+}
+
+body {
+    padding: 0px 0px 140px 0px;
+    @media all and (max-width: 500px) {
+        padding: 0px 0px 100px 0px;
+    }
+}
+
+a {
+    font-size: 1rem;
+    color: $couleur-jaune;
+    text-decoration: none;
+}
+
+.top-titre {
+    margin: 50px 0px 50px 0px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}

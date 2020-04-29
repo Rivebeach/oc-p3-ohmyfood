@@ -166,6 +166,9 @@ footer a {
 
 h3 {
   font-size: 2rem;
+  background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media all and (max-width: 500px) {
   h3 {
@@ -220,9 +223,6 @@ h4 {
   width: 100%;
   font-family: "Croissant One", cursive;
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .entrees {

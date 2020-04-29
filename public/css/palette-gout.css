@@ -165,6 +165,9 @@ footer a {
 
 h3 {
   font-size: 2.5rem;
+  background: linear-gradient(135deg, #41963C 0%, #BFFA8A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media all and (max-width: 500px) {
   h3 {
@@ -217,9 +220,6 @@ h4 {
   width: 100%;
   font-family: "Kaushan Script", cursive;
   font-size: 4rem;
-  background: linear-gradient(135deg, #41963C 0%, #BFFA8A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .entrees {

@@ -49,8 +49,6 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
-/* Palette des couleurs */
-/* strucre de base des boutons */
 .bouton {
   margin: 50px 0px 50px 0px;
   padding: 50px 50px 50px 50px;
@@ -62,7 +60,6 @@ td:not([align]), th:not([align]) {
 }
 
 /* import des éléments "structure" de page */
-/* strucre de base de chaque page */
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -105,7 +102,6 @@ a {
   text-align: center;
 }
 
-/* strucre de base du header */
 header {
   margin: 0px 0px 50px 0px;
   display: flex;
@@ -128,7 +124,6 @@ header h1 {
   color: #FDCB46;
 }
 
-/* strucre de base du footer */
 footer {
   display: flex;
   flex-direction: row;
@@ -151,7 +146,7 @@ footer a {
 }
 @media all and (max-width: 500px) {
   footer a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -239,12 +234,12 @@ h4 {
 }
 @media all and (max-width: 1024px) {
   .entrees .separateur {
-    width: 200px;
+    width: 150px;
   }
 }
 @media all and (max-width: 768px) {
   .entrees .separateur {
-    width: 175px;
+    width: 100px;
   }
 }
 @media all and (max-width: 500px) {
@@ -267,12 +262,12 @@ h4 {
 }
 @media all and (max-width: 1024px) {
   .plats .separateur {
-    width: 200px;
+    width: 150px;
   }
 }
 @media all and (max-width: 768px) {
   .plats .separateur {
-    width: 175px;
+    width: 100px;
   }
 }
 @media all and (max-width: 500px) {
@@ -295,12 +290,12 @@ h4 {
 }
 @media all and (max-width: 1024px) {
   .desserts .separateur {
-    width: 200px;
+    width: 150px;
   }
 }
 @media all and (max-width: 768px) {
   .desserts .separateur {
-    width: 175px;
+    width: 100px;
   }
 }
 @media all and (max-width: 500px) {

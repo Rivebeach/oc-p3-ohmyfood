@@ -83,7 +83,7 @@
     h2 {
         font-size: 1.50rem;
         background: $couleur-chic-degrade;
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     p {

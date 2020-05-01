@@ -144,6 +144,10 @@ footer a {
   font-size: 1.25rem;
   font-weight: normal;
 }
+footer a:hover {
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
 @media all and (max-width: 500px) {
   footer a {
     font-size: 1rem;
@@ -171,7 +175,9 @@ h3 {
 }
 
 h4 {
+  padding-bottom: 10px;
   font-size: 1.25rem;
+  text-align: center;
 }
 @media all and (max-width: 500px) {
   h4 {
@@ -249,6 +255,14 @@ h4 {
     display: none;
   }
 }
+.entrees h4 {
+  background: linear-gradient(to top, #0228DD 0%, #0228DD 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: 400ms;
+}
+.entrees h4:hover {
+  background-size: 100% 100%;
+}
 
 .plats {
   padding: 10px 10px 10px 10px;
@@ -277,6 +291,14 @@ h4 {
     display: none;
   }
 }
+.plats h4 {
+  background: linear-gradient(to top, #0670F3 0%, #0670F3 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: 400ms;
+}
+.plats h4:hover {
+  background-size: 100% 100%;
+}
 
 .desserts {
   padding: 10px 10px 10px 10px;
@@ -304,6 +326,14 @@ h4 {
   .desserts .separateur {
     display: none;
   }
+}
+.desserts h4 {
+  background: linear-gradient(to top, #229DF9 0%, #229DF9 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  transition: 400ms;
+}
+.desserts h4:hover {
+  background-size: 100% 100%;
 }
 
 .ligne-titre {

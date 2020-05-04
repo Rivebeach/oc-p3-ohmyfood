@@ -53,10 +53,15 @@ td:not([align]), th:not([align]) {
   margin: 50px 0px 50px 0px;
   padding: 50px 50px 50px 50px;
   border-radius: 20px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: normal;
   color: #FDCB46;
   background-color: #579C87;
+}
+@media all and (max-width: 500px) {
+  .bouton {
+    padding: 30px 25px 30px 25px;
+  }
 }
 
 @keyframes wiggle {

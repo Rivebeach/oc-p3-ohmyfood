@@ -23,7 +23,7 @@
 h3 {
     font-size: 2.5rem;
     background: $couleur-delice-degrade;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media all and (max-width: 500px) {
         font-size: 2.50rem;
@@ -45,8 +45,8 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1670px;
-    width: 1180px;
+    height: auto;
+    width: 1000px;
     @media all and (max-width: 1024px) {
         height: 100%;
         width: 80%;

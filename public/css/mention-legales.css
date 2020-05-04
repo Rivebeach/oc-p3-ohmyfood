@@ -147,7 +147,8 @@ footer a:hover {
 /* mise en page à destination de la page mentions-legales.html et du fichier de style mentions-legales.css */
 .conteneur-mentions-legales {
   margin: 0px auto 100px auto;
-  width: 1180px;
+  height: auto;
+  width: 1000px;
 }
 @media all and (max-width: 1024px) {
   .conteneur-mentions-legales {

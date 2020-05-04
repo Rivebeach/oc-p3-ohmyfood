@@ -53,10 +53,15 @@ td:not([align]), th:not([align]) {
   margin: 50px 0px 50px 0px;
   padding: 50px 50px 50px 50px;
   border-radius: 20px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: normal;
   color: #FDCB46;
   background-color: #579C87;
+}
+@media all and (max-width: 500px) {
+  .bouton {
+    padding: 30px 25px 30px 25px;
+  }
 }
 
 /* import des éléments "structure" de page */
@@ -166,7 +171,7 @@ footer a:hover {
 h3 {
   font-size: 2rem;
   background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media all and (max-width: 500px) {
@@ -189,8 +194,8 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1670px;
-  width: 1180px;
+  height: auto;
+  width: 1000px;
   font-family: "Libre Baskerville", serif;
   background: #FFF5FE;
   box-shadow: 0px 0px 10px 1px #e2e2e2;

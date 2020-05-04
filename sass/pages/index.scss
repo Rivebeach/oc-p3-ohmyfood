@@ -83,7 +83,7 @@
     h2 {
         font-size: 1.50rem;
         background: $couleur-chic-degrade;
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     p {
@@ -149,4 +149,49 @@
     margin: 0px 0px 50px 0px;
     display: flex;
     justify-content: center;
+}
+
+.next {
+	display: flex;
+    align-items: baseline;
+    p {
+        margin: 0px 25px 0px 0px;
+    }
+}
+
+.petits-points {
+	display: flex;
+	align-items: center;
+}
+
+.point-01 {
+	background-color: $couleur-jaune;
+	height: 0.50rem;
+	width: 0.50rem;
+	border-radius: 50%;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	animation: bounce 900ms infinite;
+}
+
+.point-02 {
+	background-color: $couleur-jaune;
+	height: 0.50rem;
+	width: 0.50rem;
+	border-radius: 50%;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	animation: bounce 900ms infinite;
+	animation-delay: 100ms;
+}
+
+.point-03 {
+	background-color: $couleur-jaune;
+	height: 0.50rem;
+	width: 0.50rem;
+	border-radius: 50%;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	animation: bounce 900ms infinite;
+	animation-delay: 150ms;
 }

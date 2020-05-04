@@ -166,7 +166,7 @@ footer a:hover {
 h3 {
   font-size: 2rem;
   background: linear-gradient(135deg, #D8852E 0%, #905BFD 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media all and (max-width: 500px) {

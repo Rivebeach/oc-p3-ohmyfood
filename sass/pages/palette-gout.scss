@@ -23,7 +23,7 @@
 h3 {
     font-size: 2.5rem;
     background: $couleur-palette-degrade;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     @media all and (max-width: 500px) {
         font-size: 2.50rem;

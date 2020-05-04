@@ -49,21 +49,37 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
-.bouton {
-  margin: 50px 0px 50px 0px;
-  padding: 50px 50px 50px 50px;
-  border-radius: 20px;
-  font-size: 1.25rem;
-  font-weight: normal;
-  color: #FDCB46;
-  background-color: #579C87;
-}
-@media all and (max-width: 500px) {
-  .bouton {
-    padding: 30px 25px 30px 25px;
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
-
+@keyframes bounce {
+  0% {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  50% {
+    height: 0.5rem;
+    width: 0.5rem;
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
 /* import des éléments "structure" de page */
 html {
   font-family: "Montserrat", sans-serif;

@@ -49,6 +49,37 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  50% {
+    height: 0.5rem;
+    width: 0.5rem;
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
 /* import des éléments "structure" de page */
 html {
   font-family: "Montserrat", sans-serif;
@@ -144,26 +175,42 @@ footer a:hover {
   }
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  50% {
+    height: 0.5rem;
+    width: 0.5rem;
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
 /* mise en page à destination de la page mentions-legales.html et du fichier de style mentions-legales.css */
 .conteneur-mentions-legales {
   margin: 0px auto 100px auto;
   height: auto;
   width: 1000px;
-}
-@media all and (max-width: 1024px) {
-  .conteneur-mentions-legales {
-    width: 80%;
-  }
-}
-@media all and (max-width: 768px) {
-  .conteneur-mentions-legales {
-    width: 90%;
-  }
-}
-@media all and (max-width: 500px) {
-  .conteneur-mentions-legales {
-    width: 90%;
-  }
 }
 .conteneur-mentions-legales h3 {
   padding: 10px 0px 10px 0px;
@@ -180,6 +227,21 @@ footer a:hover {
 .conteneur-mentions-legales a {
   font-size: 0.8rem;
   color: #579C87;
+}
+@media all and (max-width: 1024px) {
+  .conteneur-mentions-legales {
+    width: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .conteneur-mentions-legales {
+    width: 90%;
+  }
+}
+@media all and (max-width: 500px) {
+  .conteneur-mentions-legales {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=mention-legales.css.map */

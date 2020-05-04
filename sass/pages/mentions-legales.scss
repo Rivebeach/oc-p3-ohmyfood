@@ -2,12 +2,14 @@
 
 @import "../outils/reset.scss";
 @import "../outils/palette-couleur.scss";
+@import "../outils/animation.scss";
 
 /* import des éléments "structure" de page */
 
 @import "../structure/base.scss";
 @import "../structure/header.scss";
 @import "../structure/footer.scss";
+@import "../outils/animation.scss";
 
 /* mise en page à destination de la page mentions-legales.html et du fichier de style mentions-legales.css */
 
@@ -15,15 +17,6 @@
     margin: 0px auto 100px auto;
     height: auto;
     width: 1000px;
-    @media all and (max-width: 1024px) {
-        width: 80%;
-    }
-    @media all and (max-width: 768px) {
-        width: 90%;
-    }
-    @media all and (max-width: 500px) {
-        width: 90%;
-    }
     h3 {
         padding: 10px 0px 10px 0px;
         font-size: 0.8rem;
@@ -33,11 +26,20 @@
     }
     p {
         padding: 0px 0px 10px 0px;
-        font-size: 0.8rem;;
+        font-size: 0.8rem;
         text-align: justify;
     }
     a {
         font-size: 0.8rem;
         color: $couleur-vert;
+    }
+    @media all and (max-width: 1024px) {
+        width: 80%;
+    }
+    @media all and (max-width: 768px) {
+        width: 90%;
+    }
+    @media all and (max-width: 500px) {
+        width: 90%;
     }
 }

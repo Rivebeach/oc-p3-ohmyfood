@@ -254,7 +254,6 @@ h4 {
 }
 .entrees .separateur {
   width: 300px;
-  fill: #d8852e;
 }
 @media all and (max-width: 1024px) {
   .entrees .separateur {
@@ -291,7 +290,6 @@ h4 {
 }
 .plats .separateur {
   width: 300px;
-  fill: #a56799;
 }
 @media all and (max-width: 1024px) {
   .plats .separateur {
@@ -328,7 +326,6 @@ h4 {
 }
 .desserts .separateur {
   width: 300px;
-  fill: #905bfd;
 }
 @media all and (max-width: 1024px) {
   .desserts .separateur {

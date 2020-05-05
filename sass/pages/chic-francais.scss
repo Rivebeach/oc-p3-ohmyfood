@@ -86,7 +86,6 @@ h4 {
     color: $couleur-chic-brun;
     .separateur {
         width: 300px;
-        fill: $couleur-chic-brun;
         @media all and (max-width: 1024px) {
             width: 150px;
         }
@@ -117,7 +116,6 @@ h4 {
     color: $couleur-chic-magenta;
     .separateur {
         width: 300px;
-        fill: $couleur-chic-magenta;
         @media all and (max-width: 1024px) {
             width: 150px;
         }
@@ -148,7 +146,6 @@ h4 {
     color: $couleur-chic-bleu-magenta;
     .separateur {
         width: 300px;
-        fill:$couleur-chic-bleu-magenta;
         @media all and (max-width: 1024px) {
             width: 150px;
         }

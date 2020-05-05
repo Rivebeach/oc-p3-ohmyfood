@@ -275,7 +275,6 @@ h4:hover {
 
 .separateur {
   width: 300px;
-  fill: #633D41;
 }
 @media all and (max-width: 1024px) {
   .separateur {

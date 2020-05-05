@@ -159,6 +159,7 @@ footer {
 @media all and (max-width: 500px) {
   footer {
     height: 100px;
+    flex-direction: column;
   }
 }
 footer a {
@@ -168,11 +169,6 @@ footer a {
 footer a:hover {
   animation: wiggle 0.5s;
   animation-iteration-count: infinite;
-}
-@media all and (max-width: 500px) {
-  footer a {
-    font-size: 1rem;
-  }
 }
 
 @keyframes wiggle {

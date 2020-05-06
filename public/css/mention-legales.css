@@ -117,7 +117,7 @@ a {
 }
 
 .top-titre {
-  margin: 50px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
@@ -162,11 +162,11 @@ footer {
     flex-direction: column;
   }
 }
-footer a {
+footer div {
   font-size: 1.25rem;
   font-weight: normal;
 }
-footer a:hover {
+footer div:hover {
   animation: wiggle 0.5s;
   animation-iteration-count: infinite;
 }

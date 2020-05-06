@@ -177,11 +177,11 @@ footer {
     flex-direction: column;
   }
 }
-footer a {
+footer div {
   font-size: 1.25rem;
   font-weight: normal;
 }
-footer a:hover {
+footer div:hover {
   animation: wiggle 0.5s;
   animation-iteration-count: infinite;
 }

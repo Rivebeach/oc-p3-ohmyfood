@@ -49,6 +49,8 @@ td:not([align]), th:not([align]) {
   text-align: left;
 }
 
+/* palette des couleurs utilisées pour l'ensemble du projet */
+/* règles de formatage des boutons */
 .bouton {
   margin: 50px 0px 50px 0px;
   padding: 50px 50px 50px 50px;
@@ -64,6 +66,7 @@ td:not([align]), th:not([align]) {
   }
 }
 
+/* règles des animations keyframe */
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -96,6 +99,7 @@ td:not([align]), th:not([align]) {
   }
 }
 /* import des éléments "structure" de page */
+/* règles de formatage pour la structure de base du projet */
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -132,12 +136,13 @@ a {
 }
 
 .top-titre {
-  margin: 50px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
 }
 
+/* règles de formatage du header */
 header {
   margin: 0px 0px 50px 0px;
   display: flex;
@@ -160,6 +165,7 @@ header h1 {
   color: #FDCB46;
 }
 
+/* règles de formatage du footer */
 footer {
   display: flex;
   flex-direction: row;

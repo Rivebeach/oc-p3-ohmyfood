@@ -196,6 +196,10 @@ footer div:hover {
 }
 
 /* mise en page à destination de la page index.html et du fichier de style index.css */
+main {
+  width: 100vw;
+}
+
 .cartes {
   display: flex;
   justify-content: center;

@@ -13,6 +13,7 @@ footer {
     background: $couleur-vert;
     @media all and (max-width: 500px) {
         height: 100px;
+        width: 100vw;
         flex-direction: column;
     }
     div {

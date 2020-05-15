@@ -9,12 +9,12 @@ header {
     align-items: center;
     text-align: center;
     height: 250px;
+    width: 100%;
+    background: $couleur-vert;
     @media all and (max-width: 500px) {
         height: 150px;
         width: 100vw;
     }
-    width: 100%;
-    background: $couleur-vert;
     h1 {
         font-size: 2.75rem;
         font-weight: bold;
